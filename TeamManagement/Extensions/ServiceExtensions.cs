@@ -1,3 +1,5 @@
+using Contracts;
+
 namespace TeamManagement.Extensions;
 
 public static class ServiceExtensions
@@ -9,4 +11,7 @@ public static class ServiceExtensions
             builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
         });
     });
+
+    public static void ConfigureLoggerService(this IServiceCollection services) => services.AddSingleton<ILoggerManager, ILoggerManager>();
+
 }

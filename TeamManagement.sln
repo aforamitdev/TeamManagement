@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamManagement", "TeamManagement\TeamManagement.csproj", "{345D7D45-BF60-4A9C-B1F9-B17D1ECE316A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{ADAC7D54-24AD-4DD8-88F1-3B5429B72D40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{0007B3D7-B448-4B8B-977C-5210742B2266}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{345D7D45-BF60-4A9C-B1F9-B17D1ECE316A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{345D7D45-BF60-4A9C-B1F9-B17D1ECE316A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{345D7D45-BF60-4A9C-B1F9-B17D1ECE316A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADAC7D54-24AD-4DD8-88F1-3B5429B72D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADAC7D54-24AD-4DD8-88F1-3B5429B72D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADAC7D54-24AD-4DD8-88F1-3B5429B72D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADAC7D54-24AD-4DD8-88F1-3B5429B72D40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0007B3D7-B448-4B8B-977C-5210742B2266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0007B3D7-B448-4B8B-977C-5210742B2266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0007B3D7-B448-4B8B-977C-5210742B2266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0007B3D7-B448-4B8B-977C-5210742B2266}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

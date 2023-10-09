@@ -1,9 +1,12 @@
+using NLog;
 using Microsoft.AspNetCore.HttpOverrides;
 using TeamManagement.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
+LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(),"/nlog.config"));
 builder.Services.AddCors();
+builder.Services.ConfigureLoggerService();
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -35,7 +38,7 @@ app.UseCors("CorsPolicy");
 
 
 app.UseAuthorization();
-
 app.MapControllers();
+
 
 app.Run();
