@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerServ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{02C89B61-C3E8-4061-A34E-2866DED53F81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Respository", "Respository\Respository.csproj", "{6678E434-9A1A-47D2-8BCD-4EA88A8F8722}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{6678E434-9A1A-47D2-8BCD-4EA88A8F8722}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
