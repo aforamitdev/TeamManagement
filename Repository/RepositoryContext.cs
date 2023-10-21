@@ -17,7 +17,7 @@ public class RepositoryContext:DbContext
         modelBuilder.ApplyConfiguration(new EmployeeConfiguration());
     }
 
-    public DbSet<Company>? Companies { get; set; }
-    public DbSet<Employee>? Employees { get; set; }
+    public DbSet<Company> Companies { get; set; }
+    public DbSet<Employee> Employees { get; set; }
 
 }

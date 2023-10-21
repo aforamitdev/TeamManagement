@@ -1,7 +1,7 @@
 using Contracts;
 using Entities;
+using Repository;
 
-namespace Repository;
 
 public class EmployeeRepository:RepositoryBase<Employee>,IEmployRepository
 {
