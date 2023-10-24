@@ -1,3 +1,4 @@
+using Entities.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 
@@ -14,16 +15,20 @@ public class CompaniesController:ControllerBase
     [HttpGet]
     public IActionResult GetCompanies()
     {
-        try
-        {
             var companies = _service.CompanyService.GetAllCompanies(trackChanges: false);
             return Ok(companies);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            return StatusCode(500, "Internal service error");
-        }
-        
     }
+
+    [HttpGet("{id:guid}")]
+    public IActionResult GetCompany(Guid id)
+    {
+        var company = _service.CompanyService.GetCompany(id, trackChanges: false);
+        if (company is null)
+            throw new CompanyNotFoundException(id);
+
+        return Ok(company);
+    }
+
+   
+
 }

@@ -10,4 +10,7 @@ public class CompanyRepository:RepositoryBase<Company>,ICompanyRepository
     }
 
     public IEnumerable<Company> GetAllCompanies(bool trackChanges) => FindAll(trackChanges).OrderBy(c => c.Name).ToList();
+
+    public Company GetCompany(Guid companyId, bool trackChange) => FindByCondition(c => c.Id.Equals(companyId), trackChange)
+        .SingleOrDefault();
 }
