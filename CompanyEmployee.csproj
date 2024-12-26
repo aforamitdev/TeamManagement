@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+<GenerateAssemblyInfo>false</GenerateAssemblyInfo>    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.11" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <Content Include=".vscode\settings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Contracts/Contracts.csproj" />
+    <ProjectReference Include="LoggerService/LoggerService.csproj" />
+    <Content Include="Program.cs" />
+  </ItemGroup>
+</Project>
